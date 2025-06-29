@@ -19,6 +19,7 @@ Parameters use case : . NONE
 There is no use of any parameters so the procedure returns no value when executed.
 
 USE CASE : EXEC bronze.load_bronze_data
+======================================================
 */
 CREATE OR ALTER PROCEDURE bronze.load_bronze_data AS
 BEGIN
