@@ -12,7 +12,7 @@ We also create schemas for each layer 'bronze', 'silver' and 'gold'.
 =========
 Warnings:
 =========
-We are only allowing one user to access database for tiem then droping it.
+We are only allowing one user to access database for time then droping it.
 If there is important data in DataWarehouse it will be permanently deleted.
 So you should always be cautious before using the scripts below.
 */
