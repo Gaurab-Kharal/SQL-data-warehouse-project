@@ -6,6 +6,7 @@
 	- Before creating table we check if it already exist in silver schema
 	- If table already exist we drop the table and create it
 */
+use DataWarehouse;
 
 IF OBJECT_ID ( 'silver.crm_cust_info', 'U') IS NOT NULL
 	DROP TABLE silver.crm_cust_info
