@@ -257,8 +257,8 @@ BEGIN TRY
            ,CASE 
             WHEN UPPER(TRIM(CUNTRY)) IN ('US', 'USA', 'UNITED STATES') THEN 'United States'
             WHEN UPPER(TRIM(CUNTRY)) IN ('DE',  'GERMANY') THEN 'Germany'
-            WHEN UPPER(TRIM(CUNTRY)) IN ('UNITED KINGDOM', 'CANADA', 'FRANCE', 'AUSTRALIA') THEN TRIM(CUNTRY)
-            ELSE 'n/a'
+            WHEN TRIM(CUNTRY) = '' OR CUNTRY IS NULL THEN 'n/a'
+            ELSE TRIM(CUNTRY)
         END AS [CUNTRY]
       FROM [DataWarehouse].[bronze].[erp_LOC_A101]
         SET @end_date = GETDATE();
