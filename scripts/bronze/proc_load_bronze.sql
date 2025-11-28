@@ -42,7 +42,7 @@ BEGIN
 		TRUNCATE TABLE bronze.crm_cust_info;
 		PRINT 'Loading data to table : [bronze.crm_cust_info]'
 		BULK INSERT bronze.crm_cust_info
-		FROM 'C:\DataProjects\DataWarehouse-project\sql-data-warehouse-project\datasets\source_crm\cust_info.csv'
+		FROM '/var/opt/mssql/data/crm/cust_info.csv'
 		WITH
 		(
 		  FIRSTROW = 2,
@@ -59,7 +59,7 @@ BEGIN
 		TRUNCATE TABLE bronze.crm_prd_info;
 		PRINT 'Loading data to table : [bronze.crm_prd_info]'
 		BULK INSERT bronze.crm_prd_info
-		FROM 'C:\DataProjects\DataWarehouse-project\sql-data-warehouse-project\datasets\source_crm\prd_info.csv'
+		FROM '/var/opt/mssql/data/crm/prd_info.csv'
 		WITH
 		(
 		  FIRSTROW = 2,
@@ -77,7 +77,7 @@ BEGIN
 		TRUNCATE TABLE bronze.crm_sales_details;
 		PRINT 'Loading data to table : [bronze.crm_sales_details]'
 		BULK INSERT bronze.crm_sales_details
-		FROM 'C:\DataProjects\DataWarehouse-project\sql-data-warehouse-project\datasets\source_crm\sales_details.csv'
+		FROM '/var/opt/mssql/data/crm/sales_details.csv'
 		WITH
 		(
 		  FIRSTROW = 2,
@@ -98,7 +98,7 @@ BEGIN
 		TRUNCATE TABLE bronze.erp_CUST_AZ12;
 		PRINT 'Loading data to table : [bronze.erp_CUST_AZ12]'
 		BULK INSERT bronze.erp_CUST_AZ12
-		FROM 'C:\DataProjects\DataWarehouse-project\sql-data-warehouse-project\datasets\source_erp\CUST_AZ12.csv'
+		FROM '/var/opt/mssql/data/erp/CUST_AZ12.csv'
 		WITH
 		(
 			FIRSTROW = 2,
@@ -116,7 +116,7 @@ BEGIN
 		TRUNCATE TABLE bronze.erp_LOC_A101;
 		PRINT 'Loading data to table : [bronze.erp_LOC_A101]'
 		BULK INSERT bronze.erp_LOC_A101
-		FROM 'C:\DataProjects\DataWarehouse-project\sql-data-warehouse-project\datasets\source_erp\LOC_A101.csv'
+		FROM '/var/opt/mssql/data/erp/LOC_A101.csv'
 		WITH
 		(
 			FIRSTROW = 2,
@@ -134,7 +134,7 @@ BEGIN
 		TRUNCATE TABLE bronze.erp_PX_CAT_G1V2;
 		PRINT 'Loading data to table : [bronze.erp_PX_CAT_G1V2]'
 		BULK INSERT bronze.erp_PX_CAT_G1V2
-		FROM 'C:\DataProjects\DataWarehouse-project\sql-data-warehouse-project\datasets\source_erp\PX_CAT_G1V2.csv'
+		FROM '/var/opt/mssql/data/erp/PX_CAT_G1V2.csv'
 		WITH
 		(
 			FIRSTROW = 2,
